@@ -31,27 +31,34 @@ namespace Live_Performance.Classes
             Boot ClosestBoot = null;
 
 
-
-            foreach (Boot boot in BootList)
+            if (BootList == null)
             {
-                X2 = Convert.ToDouble(boot.Location.X);
-                Y2 = Convert.ToDouble(boot.Location.Y);
-                distence = Math.Sqrt((Math.Pow((X2 - X1), 2.0)) + (Math.Pow((Y2 - Y1), 2.0)));
+                MessageBox.Show("Geen Boten gevonden");
+            }
+            else
+            {
+                foreach (Boot boot in BootList)
+                {
+                    X2 = Convert.ToDouble(boot.Location.X);
+                    Y2 = Convert.ToDouble(boot.Location.Y);
+                    distence = Math.Sqrt((Math.Pow((X2 - X1), 2.0)) + (Math.Pow((Y2 - Y1), 2.0)));
 
-                if (closestDistence == -1)
-                {
-                    closestDistence = distence;
-                    ClosestBoot = boot;
-                }
-                else
-                {
-                    if (closestDistence >= distence)
+                    if (closestDistence == -1)
                     {
                         closestDistence = distence;
                         ClosestBoot = boot;
                     }
+                    else
+                    {
+                        if (closestDistence >= distence)
+                        {
+                            closestDistence = distence;
+                            ClosestBoot = boot;
+                        }
+                    }
                 }
             }
+            
 
             return ClosestBoot;
         }
@@ -59,6 +66,11 @@ namespace Live_Performance.Classes
         public List<Missie> SelectMissies()
         {
             return dbMissie.SelectAllMissies();
-        } 
+        }
+
+        public bool AddMissie(Missie missie)
+        {
+            return dbMissie.AddMissie(missie);
+        }
     }
 }

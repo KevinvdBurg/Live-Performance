@@ -849,6 +849,12 @@
           <operation Id="183cca20-009e-4e5e-8051-a75c1b4d1c94" name="Missie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="bf22ab4a-53d4-4932-a31d-0149c419fc49" />
           </operation>
+          <operation Id="aa158a46-674f-4df7-817d-0e608c078de1" name="Missie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6cc41379-aa57-4c21-b7c4-821d4d232ecb" />
+          </operation>
+          <operation Id="44ce26ba-234d-42ef-ba23-509ff5c94806" name="Missie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="33ddc40d-0a38-4b02-b75c-06e0e5598091" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>

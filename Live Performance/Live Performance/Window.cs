@@ -218,7 +218,7 @@
 
         private void btn_MissieToevoegen_Click(object sender, EventArgs e)
         {
-            Missie MissieFrom = new Missie();
+            MissieForm MissieFrom = new MissieForm();
             MissieFrom.Show();
         }
     }

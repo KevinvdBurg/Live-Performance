@@ -21,6 +21,18 @@ namespace Live_Performance.Classes
 
         public Location Location { get; set; }
 
+        public string Type { get; set; }
+
+        public Missie(string naam, bool actief, string datumVertrek, string datumTerug, bool goedgekeurd, Location location, string type)
+        {
+            Naam = naam;
+            Actief = actief;
+            DatumVertrek = datumVertrek;
+            DatumTerug = datumTerug;
+            Goedgekeurd = goedgekeurd;
+            Location = location;
+            Type = type;
+        }
         public Missie(int id, string naam, bool actief, string datumVertrek, string datumTerug, bool goedgekeurd, Location location)
         {
             ID = id;
@@ -32,5 +44,19 @@ namespace Live_Performance.Classes
             Location = location;
         }
 
+        public Missie(string naam, bool actief, string datumVertrek, string datumTerug, bool goedgekeurd, Location location)
+        {
+            Naam = naam;
+            Actief = actief;
+            DatumVertrek = datumVertrek;
+            DatumTerug = datumTerug;
+            Goedgekeurd = goedgekeurd;
+            Location = location;
+        }
+
+        public Missie()
+        {
+           
+        }
     }
 }

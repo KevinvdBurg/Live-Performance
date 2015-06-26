@@ -16,7 +16,5 @@ namespace Live_Performance.Classes
             this.X = x;
             this.Y = y;
         }
-
-        
     }
 }
