@@ -300,6 +300,15 @@
           <operation Id="fb12d941-a335-4a6a-aac9-8ba4a9ec7d38" name="Update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="11eda624-0bc2-44de-97f2-dcc17e6f47c0" />
           </operation>
+          <operation Id="e3a58ef0-4882-4759-af25-171dbb7fa2d1" name="AddMissie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="49f4ad5f-0aa5-4eeb-9580-f323fc2d8759" />
+          </operation>
+          <operation Id="469df19c-830e-4b26-a76e-8db820077f41" name="SelectMissie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4ccac496-cd97-406e-895e-84483eca335c" />
+          </operation>
+          <operation Id="666967c6-9299-4aa4-8a9f-699dbd5f55d1" name="SelectAllMissie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a33e1724-d00c-4ab1-9afc-6ba55e1f46bb" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -442,6 +451,18 @@
             <elementDefinition Id="0fd727d8-dc13-48de-a001-e93fc916e46c" />
             <type_NamedElement>
               <referencedTypeMoniker Id="b85cb582-870b-437d-bffa-33a97fe52c9d" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="c7312b04-4e45-4cbf-a03b-e468ba64d68e" name="dbMissie" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8e83f66-bd66-4878-9ed1-0fe4d7f1c21d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0393ca31-bbc3-47cc-be48-2f21f165eca4" LastKnownName="DBMissie" />
+            </type_NamedElement>
+          </property>
+          <property Id="dd122bc2-8263-4cb8-a3b8-247ff94907d5" name="dbBoot" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9d45cdcc-0d27-443f-9889-2c7fce7e012b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f817b6bb-b841-4cb6-a5ed-2acf9c01dc6b" LastKnownName="DBBoot" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -724,6 +745,9 @@
           </operation>
           <operation Id="f5ffc8fd-664d-44d9-b096-2880ff32d29f" name="GetAllMissonTemplatate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="d2ef2ad1-448e-41ee-9b3f-ab3ccaa0007c" />
+          </operation>
+          <operation Id="7f8932aa-c614-48ff-ae8b-f5574a20a3ee" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="56d75815-dc04-450e-9240-aa1976152bdb" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1008,6 +1032,9 @@
           </operation>
           <operation Id="fdca23d3-8ee0-490e-afc9-bbc698533a65" name="Update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="8e764e85-0737-4560-b176-d642ffa992a4" />
+          </operation>
+          <operation Id="3f165dff-818e-48fd-8bff-2595addcc38e" name="SelectAllBoots" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="33836e36-3d69-470e-9769-541ed757e9b4" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1331,6 +1358,16 @@
     <packageHasNamedElement>
       <referencedType Id="5aed1c66-93df-4f1c-add6-695eef3e94a4" name="Missie" isAbstract="false" isLeaf="false" cachedFullName="KlassenDiagram::Missie">
         <elementDefinition Id="fac35ffe-1bf4-44bb-8d5e-10ff466fafbc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f817b6bb-b841-4cb6-a5ed-2acf9c01dc6b" name="DBBoot" isAbstract="false" isLeaf="false" cachedFullName="KlassenDiagram::DBBoot">
+        <elementDefinition Id="aa381d54-1abd-4fc9-a087-1b944f86b219" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0393ca31-bbc3-47cc-be48-2f21f165eca4" name="DBMissie" isAbstract="false" isLeaf="false" cachedFullName="KlassenDiagram::DBMissie">
+        <elementDefinition Id="7f8bbe17-3d9e-4e31-a796-169ae4fb7323" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

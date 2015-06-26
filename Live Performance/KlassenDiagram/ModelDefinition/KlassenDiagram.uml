@@ -447,6 +447,30 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="49f4ad5f-0aa5-4eeb-9580-f323fc2d8759"
+            name="AddMissie"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4ccac496-cd97-406e-895e-84483eca335c"
+            name="SelectMissie"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a33e1724-d00c-4ab1-9afc-6ba55e1f46bb"
+            name="SelectAllMissie"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -773,6 +797,42 @@
               <undefinedTypeMoniker
                 Id="1d6b9c49-fe96-46c2-9759-40da2d0966f2"
                 LastKnownName="string"
+                LastKnownLocation="KlassenDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f8e83f66-bd66-4878-9ed1-0fe4d7f1c21d"
+            name="dbMissie"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="7f8bbe17-3d9e-4e31-a796-169ae4fb7323"
+                LastKnownName="DBMissie"
+                LastKnownLocation="KlassenDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9d45cdcc-0d27-443f-9889-2c7fce7e012b"
+            name="dbBoot"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="aa381d54-1abd-4fc9-a087-1b944f86b219"
+                LastKnownName="DBBoot"
                 LastKnownLocation="KlassenDiagram.uml" />
             </type_NamedElement>
           </property>
@@ -1267,6 +1327,14 @@
           <operation
             Id="d2ef2ad1-448e-41ee-9b3f-ab3ccaa0007c"
             name="GetAllMissonTemplatate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="56d75815-dc04-450e-9240-aa1976152bdb"
+            name="Add"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1971,6 +2039,14 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="33836e36-3d69-470e-9769-541ed757e9b4"
+            name="SelectAllBoots"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -2422,6 +2498,16 @@
       <undefinedType
         Id="a495b8d9-2698-4f71-96f1-76771088bb36"
         name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="390d067d-04b1-44eb-8bd9-1dfd023f3407"
+        name="DBlogin" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0c863ae6-c655-4180-9e0c-2fb7e6037966"
+        name="DBB" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
