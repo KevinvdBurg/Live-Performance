@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="0a4bb815-41bf-4be6-81ba-a4b733cb9886" name="DomeinModel" linkedPackageId="495a8712-ed02-4bbb-b7b2-97ef9160d13a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="d6391f40-f836-4f5b-b2f8-2f47e2d0eb0f">
-      <profileInstance Id="c9543562-bcb1-4002-ba09-5e4ceef825fa" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="4ae7283f-3275-44f8-9354-f2d08cbd9059">
-      <profileInstance Id="ba6a7e0a-7d02-436d-b915-8f714055cb72" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="b3e3b4c2-433b-4483-b806-b53b9bd4f264" name="Database" isAbstract="true" isLeaf="false" isActiveClass="false">
@@ -736,6 +722,9 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="f5ffc8fd-664d-44d9-b096-2880ff32d29f" name="GetAllMissonTemplatate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d2ef2ad1-448e-41ee-9b3f-ab3ccaa0007c" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -769,6 +758,54 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="91321285-a4c5-4c97-a301-60e81a71f28d" />
           </association>
+          <association Id="3242812e-a67c-4aee-935e-3f563a98e801" isDerived="false" sourceEndRoleName="Missie" targetEndRoleName="Medewerker" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5495d384-13a3-4378-94c0-640692024ac0" LastKnownName="Medewerker" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="02a17807-a203-43d3-9f1b-72d92e1b14fe" name="Missie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="10236720-5476-4f32-8836-83732eb4b4d3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="56bfd972-9531-4638-8a0e-f4ed87c47cca" name="Medewerker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="233e260e-9737-46b1-a43e-5486dee435c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0a01cb62-359b-409a-be08-0e75875e481f" />
+          </association>
+          <association Id="458b52c9-82ba-49a8-9f89-34224e66609d" isDerived="false" sourceEndRoleName="Missie" targetEndRoleName="Waarneming" isLeaf="false" isAbstract="false">
+            <classMoniker Id="11284f4a-4f41-472e-a719-d37a716a3468" LastKnownName="Waarneming" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9a2a8c0d-2f1c-4868-af0c-cfaff0acb1e3" name="Missie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="32f88294-3f44-4426-85bf-b9710cd2bd3b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="db19f770-4dd6-4abd-b1ec-6be457a0e04b" name="Waarneming" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8447d512-c9ab-45ae-9125-977d028d4ba9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b4d7e284-6dd3-4b2b-870c-cfa5f7a0e8be" />
+          </association>
+          <association Id="ddb77314-04b0-4984-aac4-e383fbfc1f2c" isDerived="false" sourceEndRoleName="Missie" targetEndRoleName="Boot" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3ef34ff4-e7e8-4d70-96e6-edbd3a5989bf" LastKnownName="Boot" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e1dee964-970a-4e90-ba73-69f627d0b089" name="Missie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cd629834-31c0-4552-bbf6-e5cd40572740" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d45c4bb7-b034-45f2-9c1b-4eadd9e907b8" name="Boot" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a6661e42-0e72-4e60-8703-c41ec61497b8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="348e08af-8750-4f75-b4a4-3ae0c138a1ac" />
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="c9c71438-8417-4141-bbb9-9f24524ac241" name="Naam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -801,9 +838,6 @@
               <referencedTypeMoniker Id="d7565641-bbf6-4704-bacc-de97484b4475" LastKnownName="Bool" />
             </type_NamedElement>
           </property>
-          <property Id="3e92d092-def0-40c9-8507-1b47ae683bc3" name="Attribute1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="1e2887f7-042b-4610-b6cd-fc18504119b8" />
-          </property>
           <property Id="231c513d-456b-4fa3-b884-4314268ab5d5" name="Goedgekeurd" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="32dff304-c6a6-40b1-80f6-77a28fc27324" />
             <type_NamedElement>
@@ -821,24 +855,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="5495d384-13a3-4378-94c0-640692024ac0" name="Medewerker" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="3ffe3362-f85c-4130-ab8e-9329b1f0c390" />
-        <targetEnds>
-          <association Id="ab393297-8fbf-496e-b20c-8cb0e7cbe9f8" isDerived="false" sourceEndRoleName="Medewerker" targetEndRoleName="Missie" isLeaf="false" isAbstract="false">
-            <classMoniker Id="bcce1969-31f9-40f2-b482-a2107e486fb8" LastKnownName="Missie" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="06f6e1de-e8fb-493e-ae10-1eb67e63729d" name="Medewerker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="5a97341a-2413-427c-b2a8-6c8c732dbac1" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="a7dccc67-12c4-491b-8d07-02024e2dcedc" name="Missie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="8c4b1a4c-b7df-49a4-8867-ca5ad875f234" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="7edff7f7-9007-40a1-8fb0-feaf9797d5b7" />
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property Id="c39b3473-de5c-4858-8c09-995f5b3b3784" name="Naam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="c264c0f0-43ff-45a1-9667-2f9935602e83" />
@@ -858,6 +874,12 @@
               <referencedTypeMoniker Id="8c08ecd9-4615-4ee3-a3c4-32c2f49f6703" LastKnownName="String" />
             </type_NamedElement>
           </property>
+          <property Id="5e4b1cf3-11bd-49d4-9735-f42cfcaed26c" name="Missie" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="077d5f5f-e748-4c2f-a8e4-675e75c3bb23" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5aed1c66-93df-4f1c-add6-695eef3e94a4" LastKnownName="Missie" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="6cfc68da-332a-4368-b81b-17a760c17e02" name="Medewerker" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -874,6 +896,12 @@
             <elementDefinition Id="4744c04a-ba44-48e5-b29b-76f6a309de0c" />
             <type_NamedElement>
               <referencedTypeMoniker Id="8c08ecd9-4615-4ee3-a3c4-32c2f49f6703" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="6987b9d4-f975-4b39-9167-1499711a63b6" name="Boot" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ca2242d3-e904-4bc3-ad8a-c660a1c718b2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e36fb7a0-19a8-4465-8a8d-35aa19ac44aa" LastKnownName="Boot" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -904,22 +932,6 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="cd8163c8-12e7-49d3-9e05-37b778d2e180" />
           </association>
-          <association Id="21073594-54a6-49bc-bbe8-e80ad11ba816" isDerived="false" sourceEndRoleName="Boot" targetEndRoleName="Missie" isLeaf="false" isAbstract="false">
-            <classMoniker Id="bcce1969-31f9-40f2-b482-a2107e486fb8" LastKnownName="Missie" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="28fdb30e-c1e6-42e6-aaba-e95ab33ca6b8" name="Boot" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="4fc7a184-3636-4527-9959-8ddec102f5cb" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="1f3b51f7-5e21-46fb-84a3-5d1c63c129d2" name="Missie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="f9ad6f91-a08c-4c6e-83e6-1c9a36ac92c7" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="5aacdb87-033e-4c08-bc8a-123f34d6dacc" />
-          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="8c6bf200-6a87-4088-8a2c-eca44b13f80b" name="Naam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -948,6 +960,18 @@
           </property>
           <property Id="92e6190f-306d-4445-8061-98f2e6a3bc75" name="MaxPersonen" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="7db503fd-aaf8-452c-b247-0897e96c6f9a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ee1b521b-088a-42e2-9497-e571c1f3702f" LastKnownName="Int" />
+            </type_NamedElement>
+          </property>
+          <property Id="254ee0d2-75bf-4dba-affc-0f4f3c64b03d" name="Missie" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0ceeb4ef-5a87-4232-95f5-5a54c1412424" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5aed1c66-93df-4f1c-add6-695eef3e94a4" LastKnownName="Missie" />
+            </type_NamedElement>
+          </property>
+          <property Id="8051c20a-2d8f-4f6d-8546-5951608a63f1" name="ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b1afff3b-1513-42f7-8ade-70df91affec4" />
             <type_NamedElement>
               <referencedTypeMoniker Id="ee1b521b-088a-42e2-9497-e571c1f3702f" LastKnownName="Int" />
             </type_NamedElement>
@@ -992,6 +1016,12 @@
               <referencedTypeMoniker Id="8c08ecd9-4615-4ee3-a3c4-32c2f49f6703" LastKnownName="String" />
             </type_NamedElement>
           </property>
+          <property Id="d45428d0-e07f-436d-b17f-cf7dbe66ded6" name="Missie" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="98a73eba-4ea2-493f-bbe9-e76d9dde64b5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5aed1c66-93df-4f1c-add6-695eef3e94a4" LastKnownName="Missie" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="830cd37e-d5e6-4077-af46-ce4792fad43e" name="Verslag" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1003,24 +1033,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="11284f4a-4f41-472e-a719-d37a716a3468" name="Waarneming" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="bc2c816a-ad7e-4ad8-be3c-f67147b367b1" />
-        <targetEnds>
-          <association Id="fe38e876-3ea8-4bc6-8c80-2900282f9457" isDerived="false" sourceEndRoleName="Waarneming" targetEndRoleName="Missie" isLeaf="false" isAbstract="false">
-            <classMoniker Id="bcce1969-31f9-40f2-b482-a2107e486fb8" LastKnownName="Missie" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="a0567faa-f5e6-478e-8295-6deefb93c528" name="Waarneming" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="3ab0b55d-814d-4ff0-a89b-05b37ec583c9" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="6fecb694-8bba-433e-a5dc-5992d4d4bee5" name="Missie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="12ea0a01-ecc1-4b64-a68c-7434f7cb6c9b" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="54b61b36-960f-4b11-a603-61a6d5c339aa" />
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property Id="5e26b97b-7b7a-456e-8e21-503dfd45b4a7" name="Naam" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="9b3c87ed-8c4f-4f9a-92ad-c78a3b220262" />
@@ -1030,6 +1042,12 @@
           </property>
           <property Id="08e0b8d2-f1c8-4997-8d97-84bcb63c15d0" name="Datum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="554119ec-b11f-4406-bb43-e1cea0763498" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8c08ecd9-4615-4ee3-a3c4-32c2f49f6703" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="79aed9f4-4893-4f90-ab27-9657ec4909d1" name="Tekst" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f4033b53-7a14-44cc-9fa0-072d714d7c74" />
             <type_NamedElement>
               <referencedTypeMoniker Id="8c08ecd9-4615-4ee3-a3c4-32c2f49f6703" LastKnownName="String" />
             </type_NamedElement>
@@ -1045,41 +1063,17 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="b65935d5-a89e-498c-bde6-9c0bbcb7137b" name="Meeting" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="fa211cb2-72fc-487e-8e34-947cdedb61ac" />
-        <targetEnds>
-          <association Id="99fe9846-fb7d-41e7-afed-bc67f2e7b61d" isDerived="false" sourceEndRoleName="Meeting" targetEndRoleName="Waarneming" isLeaf="false" isAbstract="false">
+        <generalsInternal>
+          <generalization Id="e1a0ef7d-4ab5-401e-bad6-f490eddbb921" isSubstitutable="false">
             <classMoniker Id="11284f4a-4f41-472e-a719-d37a716a3468" LastKnownName="Waarneming" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="916e5605-d4bd-4971-9c6b-90cf0856a753" name="Meeting" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="4f894259-89b2-4c36-8e3b-165c7b90ea20" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="f5f7f191-2d9a-4375-8427-e0d56fb7191f" name="Waarneming" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="d9951144-de1e-4b33-8e0a-2130f5dd2544" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="52e688e2-897b-4ccf-8533-7d928a233caf" />
-          </association>
-        </targetEnds>
+            <elementDefinition Id="941af555-1cf5-4a57-b083-e4fc19cca3ed" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property Id="8c8f072a-1faf-4ecc-9266-c5f480873a09" name="Locatie" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="c773939d-f538-4736-8d17-65ee55f13576" />
             <type_NamedElement>
               <referencedTypeMoniker Id="3eb9492d-9fc3-4fab-ad3e-286a5228e500" LastKnownName="Location" />
-            </type_NamedElement>
-          </property>
-          <property Id="e4704d99-6eb1-43d8-8664-d04fdab1c6d7" name="O2" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="3eee960b-c0e9-442b-9f0b-1706a31750e4" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="8c08ecd9-4615-4ee3-a3c4-32c2f49f6703" LastKnownName="String" />
-            </type_NamedElement>
-          </property>
-          <property Id="5ea39d57-f5a2-4811-b077-5abaa3f1f74e" name="CO2" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="5c126d70-a81d-4cde-9674-f3672727c139" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="8c08ecd9-4615-4ee3-a3c4-32c2f49f6703" LastKnownName="String" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -1093,35 +1087,17 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="ee192051-f3cb-4121-a0ad-23becb3cf2ce" name="Incident" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1ac2edf6-f4f4-4589-af3c-b6b3eafde5c5" />
-        <targetEnds>
-          <association Id="c6f23198-9d9f-44fb-b9ac-84b4eded4d39" isDerived="false" sourceEndRoleName="Incident" targetEndRoleName="Waarneming" isLeaf="false" isAbstract="false">
+        <generalsInternal>
+          <generalization Id="5f99e62a-dba5-47c7-9df6-0059c7d8f79e" isSubstitutable="false">
             <classMoniker Id="11284f4a-4f41-472e-a719-d37a716a3468" LastKnownName="Waarneming" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ef646175-2347-413b-a8ed-c02e9c4cc330" name="Incident" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="d2b80c01-294e-4f82-ac88-96f96b6f0fb6" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="e8ebb46c-c7f4-44c9-b9ee-bf9030e0034e" name="Waarneming" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="20d8aab3-3c36-4cb2-8b41-4425513a61ee" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="a1591207-e94e-46ba-9fcc-98c2a63d5a3b" />
-          </association>
-        </targetEnds>
+            <elementDefinition Id="a639f367-3dc7-4bdc-8fb6-9e5480e12544" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property Id="87ffd78f-be70-42ff-854f-43b78243d19c" name="Politie" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="2b79ffcf-7a5b-4ccd-a30d-a22d51b6815d" />
             <type_NamedElement>
               <referencedTypeMoniker Id="d7565641-bbf6-4704-bacc-de97484b4475" LastKnownName="Bool" />
-            </type_NamedElement>
-          </property>
-          <property Id="de5e19bf-86a1-4aa2-a7d5-98e975677e17" name="Tekst" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="aa79f062-3584-4cb0-960c-056ae24a1cbd" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="8c08ecd9-4615-4ee3-a3c4-32c2f49f6703" LastKnownName="String" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -1346,8 +1322,27 @@
         <elementDefinition Id="a495b8d9-2698-4f71-96f1-76771088bb36" />
       </referencedType>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5aed1c66-93df-4f1c-add6-695eef3e94a4" name="Missie" isAbstract="false" isLeaf="false" cachedFullName="KlassenDiagram::Missie">
+        <elementDefinition Id="fac35ffe-1bf4-44bb-8d5e-10ff466fafbc" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="495a8712-ed02-4bbb-b7b2-97ef9160d13a" name="KlassenDiagram">
     <elementDefinition Id="6bef5035-68af-4bfa-a7b8-a67230b35012" />
+    <profileInstances>
+      <packageHasProfileInstances Id="d6391f40-f836-4f5b-b2f8-2f47e2d0eb0f">
+        <profileInstance Id="c9543562-bcb1-4002-ba09-5e4ceef825fa" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4ae7283f-3275-44f8-9354-f2d08cbd9059">
+        <profileInstance Id="ba6a7e0a-7d02-436d-b915-8f714055cb72" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

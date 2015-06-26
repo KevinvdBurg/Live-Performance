@@ -1264,6 +1264,14 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="d2ef2ad1-448e-41ee-9b3f-ab3ccaa0007c"
+            name="GetAllMissonTemplatate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1324,6 +1332,123 @@
                       value="*" />
                   </upperValueInternal>
                 </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0a01cb62-359b-409a-be08-0e75875e481f"
+            isDerived="false"
+            sourceEndRoleName="Missie"
+            targetEndRoleName="Medewerker"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3ffe3362-f85c-4130-ab8e-9329b1f0c390"
+              LastKnownName="Medewerker"
+              LastKnownLocation="KlassenDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="10236720-5476-4f32-8836-83732eb4b4d3"
+                  name="Missie"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="233e260e-9737-46b1-a43e-5486dee435c2"
+                  name="Medewerker"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b4d7e284-6dd3-4b2b-870c-cfa5f7a0e8be"
+            isDerived="false"
+            sourceEndRoleName="Missie"
+            targetEndRoleName="Waarneming"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="bc2c816a-ad7e-4ad8-be3c-f67147b367b1"
+              LastKnownName="Waarneming"
+              LastKnownLocation="KlassenDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="32f88294-3f44-4426-85bf-b9710cd2bd3b"
+                  name="Missie"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8447d512-c9ab-45ae-9125-977d028d4ba9"
+                  name="Waarneming"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="348e08af-8750-4f75-b4a4-3ae0c138a1ac"
+            isDerived="false"
+            sourceEndRoleName="Missie"
+            targetEndRoleName="Boot"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="697d51b3-d662-4b6c-929d-6c8c4ea634fa"
+              LastKnownName="Boot"
+              LastKnownLocation="KlassenDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cd629834-31c0-4552-bbf6-e5cd40572740"
+                  name="Missie"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a6661e42-0e72-4e60-8703-c41ec61497b8"
+                  name="Boot"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -1420,16 +1545,6 @@
             </type_NamedElement>
           </property>
           <property
-            Id="1e2887f7-042b-4610-b6cd-fc18504119b8"
-            name="Attribute1"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="32dff304-c6a6-40b1-80f6-77a28fc27324"
             name="Goedgekeurd"
             isLeaf="false"
@@ -1467,47 +1582,6 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="7edff7f7-9007-40a1-8fb0-feaf9797d5b7"
-            isDerived="false"
-            sourceEndRoleName="Medewerker"
-            targetEndRoleName="Missie"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="fac35ffe-1bf4-44bb-8d5e-10ff466fafbc"
-              LastKnownName="Missie"
-              LastKnownLocation="KlassenDiagram.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="5a97341a-2413-427c-b2a8-6c8c732dbac1"
-                  name="Medewerker"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="8c4b1a4c-b7df-49a4-8867-ca5ad875f234"
-                  name="Missie"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="c264c0f0-43ff-45a1-9667-2f9935602e83"
@@ -1563,6 +1637,24 @@
                 LastKnownLocation="KlassenDiagram.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="077d5f5f-e748-4c2f-a8e4-675e75c3bb23"
+            name="Missie"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="fac35ffe-1bf4-44bb-8d5e-10ff466fafbc"
+                LastKnownName="Missie"
+                LastKnownLocation="KlassenDiagram.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -1599,6 +1691,24 @@
               <primitiveTypeMoniker
                 Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
                 LastKnownName="String"
+                LastKnownLocation="KlassenDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ca2242d3-e904-4bc3-ad8a-c660a1c718b2"
+            name="Boot"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="697d51b3-d662-4b6c-929d-6c8c4ea634fa"
+                LastKnownName="Boot"
                 LastKnownLocation="KlassenDiagram.uml" />
             </type_NamedElement>
           </property>
@@ -1652,45 +1762,6 @@
                 <memberEnd
                   Id="fab81065-514e-42cc-baea-83daaf5a3d71"
                   name="Matriaal"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="5aacdb87-033e-4c08-bc8a-123f34d6dacc"
-            isDerived="false"
-            sourceEndRoleName="Boot"
-            targetEndRoleName="Missie"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="fac35ffe-1bf4-44bb-8d5e-10ff466fafbc"
-              LastKnownName="Missie"
-              LastKnownLocation="KlassenDiagram.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="4fc7a184-3636-4527-9959-8ddec102f5cb"
-                  name="Boot"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f9ad6f91-a08c-4c6e-83e6-1c9a36ac92c7"
-                  name="Missie"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1793,6 +1864,42 @@
                 LastKnownLocation="KlassenDiagram.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="0ceeb4ef-5a87-4232-95f5-5a54c1412424"
+            name="Missie"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="fac35ffe-1bf4-44bb-8d5e-10ff466fafbc"
+                LastKnownName="Missie"
+                LastKnownLocation="KlassenDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b1afff3b-1513-42f7-8ade-70df91affec4"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="0747ef8d-8c24-443b-95f7-a768fa5bf989"
+                LastKnownName="Int"
+                LastKnownLocation="KlassenDiagram.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -1877,6 +1984,24 @@
                 LastKnownLocation="KlassenDiagram.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="98a73eba-4ea2-493f-bbe9-e76d9dde64b5"
+            name="Missie"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="fac35ffe-1bf4-44bb-8d5e-10ff466fafbc"
+                LastKnownName="Missie"
+                LastKnownLocation="KlassenDiagram.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -1897,47 +2022,6 @@
         isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="54b61b36-960f-4b11-a603-61a6d5c339aa"
-            isDerived="false"
-            sourceEndRoleName="Waarneming"
-            targetEndRoleName="Missie"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="fac35ffe-1bf4-44bb-8d5e-10ff466fafbc"
-              LastKnownName="Missie"
-              LastKnownLocation="KlassenDiagram.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="3ab0b55d-814d-4ff0-a89b-05b37ec583c9"
-                  name="Waarneming"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="12ea0a01-ecc1-4b64-a68c-7434f7cb6c9b"
-                  name="Missie"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="9b3c87ed-8c4f-4f9a-92ad-c78a3b220262"
@@ -1975,6 +2059,24 @@
                 LastKnownLocation="KlassenDiagram.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="f4033b53-7a14-44cc-9fa0-072d714d7c74"
+            name="Tekst"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="KlassenDiagram.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -1995,47 +2097,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="52e688e2-897b-4ccf-8533-7d928a233caf"
-            isDerived="false"
-            sourceEndRoleName="Meeting"
-            targetEndRoleName="Waarneming"
-            isLeaf="false"
-            isAbstract="false">
+        <generalsInternal>
+          <generalization
+            Id="941af555-1cf5-4a57-b083-e4fc19cca3ed"
+            isSubstitutable="false">
             <classMoniker
               Id="bc2c816a-ad7e-4ad8-be3c-f67147b367b1"
               LastKnownName="Waarneming"
               LastKnownLocation="KlassenDiagram.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="4f894259-89b2-4c36-8e3b-165c7b90ea20"
-                  name="Meeting"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="d9951144-de1e-4b33-8e0a-2130f5dd2544"
-                  name="Waarneming"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property
             Id="c773939d-f538-4736-8d17-65ee55f13576"
@@ -2052,42 +2123,6 @@
               <undefinedTypeMoniker
                 Id="aaf7bc33-d27a-43ef-869f-070c3b6ba453"
                 LastKnownName="Location"
-                LastKnownLocation="KlassenDiagram.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="3eee960b-c0e9-442b-9f0b-1706a31750e4"
-            name="O2"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
-                LastKnownLocation="KlassenDiagram.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="5c126d70-a81d-4cde-9674-f3672727c139"
-            name="CO2"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
                 LastKnownLocation="KlassenDiagram.uml" />
             </type_NamedElement>
           </property>
@@ -2111,47 +2146,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="a1591207-e94e-46ba-9fcc-98c2a63d5a3b"
-            isDerived="false"
-            sourceEndRoleName="Incident"
-            targetEndRoleName="Waarneming"
-            isLeaf="false"
-            isAbstract="false">
+        <generalsInternal>
+          <generalization
+            Id="a639f367-3dc7-4bdc-8fb6-9e5480e12544"
+            isSubstitutable="false">
             <classMoniker
               Id="bc2c816a-ad7e-4ad8-be3c-f67147b367b1"
               LastKnownName="Waarneming"
               LastKnownLocation="KlassenDiagram.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="d2b80c01-294e-4f82-ac88-96f96b6f0fb6"
-                  name="Incident"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="20d8aab3-3c36-4cb2-8b41-4425513a61ee"
-                  name="Waarneming"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property
             Id="2b79ffcf-7a5b-4ccd-a30d-a22d51b6815d"
@@ -2168,24 +2172,6 @@
               <undefinedTypeMoniker
                 Id="813cf6a6-648d-40b0-9abe-2bd72a0eeecc"
                 LastKnownName="Bool"
-                LastKnownLocation="KlassenDiagram.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="aa79f062-3584-4cb0-960c-056ae24a1cbd"
-            name="Tekst"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
                 LastKnownLocation="KlassenDiagram.uml" />
             </type_NamedElement>
           </property>
